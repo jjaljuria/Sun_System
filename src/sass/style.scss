@@ -1,0 +1,118 @@
+/*Variables */
+@import './variables';
+
+$planets:
+	'mercury',
+	'venus',
+	'earth',
+	'mars'
+;
+
+
+
+	
+body{
+	font-size: 16px;
+}
+
+.w-100{
+	width: 100%;
+}
+
+.h-100{
+	height: 100%;
+}
+
+.container{
+	max-width: 1080px;
+	max-height: 1080px;
+}
+
+.space{
+	background-color: rgb(61, 65, 126);
+}
+.sol{
+	width: 5rem;
+	height: 5rem;
+	background-color: yellow;
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.circle{
+	border-radius: 100%;
+
+}
+
+@mixin orbit($animation-duration, $diameter) {
+	width: $diameter;
+	height: $diameter;
+	position: absolute;
+	top:calc(50% - #{$diameter/2});
+	left: calc(50% - #{$diameter/2});
+	animation-name: movement;
+	animation-iteration-count: infinite;
+	animation-duration: $animation-duration;
+	animation-timing-function: linear;
+	border: 1px solid #ffffff;
+	border-radius: 100%;
+}
+
+@mixin planet($size){
+	position: relative;
+	top: -$size/2;
+	left:calc(50% - #{$size/2});
+	width: $size;
+	height: $size;
+}
+
+
+.mercury-orbit{
+	@include orbit($mercury-orbit-time, $mercury-orbit-diameter);
+}
+
+.mercury-planet{
+	background-color: rgb(97, 150, 197);
+	@include planet($mercury-planet-size);
+}
+
+.venus-orbit{
+	@include orbit($venus-orbit-time, $venus-orbit-diameter);
+}
+
+.venus-planet{
+
+	background-color: orange;
+	@include planet($venus-planet-size);
+}
+
+.earth-orbit{
+	@include orbit($earth-orbit-time, $earth-orbit-diameter);
+}
+
+.earth-planet{
+	
+	background-color: rgb(63, 50, 248);
+	@include planet($earth-planet-size);
+}
+
+.mars-orbit{
+	@include orbit($mars-orbit-time, $mars-orbit-diameter);
+}
+
+.mars-planet{
+	background-color: rgb(170, 5, 5);
+	@include planet($mars-planet-size);
+}
+
+
+@keyframes movement{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
