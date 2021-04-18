@@ -18,7 +18,7 @@ body {
 }
 
 .space {
-  background-color: #3d417e;
+  background-color: #1b1d38;
 }
 
 .sun {
@@ -82,12 +82,11 @@ body {
 }
 
 .venus-planet {
-  background-color: orange;
   position: relative;
-  top: -0.5rem;
-  left: calc(50% - 0.5rem);
-  width: 1rem;
-  height: 1rem;
+  top: -0.9rem;
+  left: calc(50% - 0.9rem);
+  width: 1.8rem;
+  height: 1.8rem;
 }
 
 .earth-orbit {
@@ -109,12 +108,11 @@ body {
 }
 
 .earth-planet {
-  background-color: #3f32f8;
   position: relative;
-  top: -0.5rem;
-  left: calc(50% - 0.5rem);
-  width: 1rem;
-  height: 1rem;
+  top: -0.9rem;
+  left: calc(50% - 0.9rem);
+  width: 1.8rem;
+  height: 1.8rem;
 }
 
 .mars-orbit {
@@ -136,7 +134,7 @@ body {
 }
 
 .mars-planet {
-  background-color: #aa0505;
+  background-color: #9e1313;
   position: relative;
   top: -0.4rem;
   left: calc(50% - 0.4rem);
@@ -163,12 +161,11 @@ body {
 }
 
 .jupiter-planet {
-  background-color: #cf8626;
   position: relative;
-  top: -1.25rem;
-  left: calc(50% - 1.25rem);
-  width: 2.5rem;
-  height: 2.5rem;
+  top: -2.25rem;
+  left: calc(50% - 2.25rem);
+  width: 4.5rem;
+  height: 4.5rem;
 }
 
 .saturn-orbit {
@@ -190,12 +187,11 @@ body {
 }
 
 .saturn-planet {
-  background-color: #643f0e;
   position: relative;
-  top: -0.9rem;
-  left: calc(50% - 0.9rem);
-  width: 1.8rem;
-  height: 1.8rem;
+  top: -1.5rem;
+  left: calc(50% - 1.5rem);
+  width: 3rem;
+  height: 3rem;
 }
 
 .uranus-orbit {
@@ -219,10 +215,10 @@ body {
 .uranus-planet {
   background-color: #444444;
   position: relative;
-  top: -0.65rem;
-  left: calc(50% - 0.65rem);
-  width: 1.3rem;
-  height: 1.3rem;
+  top: -1rem;
+  left: calc(50% - 1rem);
+  width: 2rem;
+  height: 2rem;
 }
 
 .neptune-orbit {
@@ -246,10 +242,10 @@ body {
 .neptune-planet {
   background-color: #227be0;
   position: relative;
-  top: -0.65rem;
-  left: calc(50% - 0.65rem);
-  width: 1.3rem;
-  height: 1.3rem;
+  top: -0.75rem;
+  left: calc(50% - 0.75rem);
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 @-webkit-keyframes movement {
