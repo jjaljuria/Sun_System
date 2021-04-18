@@ -143,6 +143,114 @@ body {
   height: 0.8rem;
 }
 
+.jupiter-orbit {
+  width: 22rem;
+  height: 22rem;
+  position: absolute;
+  top: calc(50% - 11rem);
+  left: calc(50% - 11rem);
+  -webkit-animation-name: movement;
+          animation-name: movement;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 17s;
+          animation-duration: 17s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  border: 1px solid #ffffff;
+  border-radius: 100%;
+}
+
+.jupiter-planet {
+  background-color: #cf8626;
+  position: relative;
+  top: -1.25rem;
+  left: calc(50% - 1.25rem);
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.saturn-orbit {
+  width: 28rem;
+  height: 28rem;
+  position: absolute;
+  top: calc(50% - 14rem);
+  left: calc(50% - 14rem);
+  -webkit-animation-name: movement;
+          animation-name: movement;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  border: 1px solid #ffffff;
+  border-radius: 100%;
+}
+
+.saturn-planet {
+  background-color: #643f0e;
+  position: relative;
+  top: -0.9rem;
+  left: calc(50% - 0.9rem);
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.uranus-orbit {
+  width: 34rem;
+  height: 34rem;
+  position: absolute;
+  top: calc(50% - 17rem);
+  left: calc(50% - 17rem);
+  -webkit-animation-name: movement;
+          animation-name: movement;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 23s;
+          animation-duration: 23s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  border: 1px solid #ffffff;
+  border-radius: 100%;
+}
+
+.uranus-planet {
+  background-color: #444444;
+  position: relative;
+  top: -0.65rem;
+  left: calc(50% - 0.65rem);
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.neptune-orbit {
+  width: 40rem;
+  height: 40rem;
+  position: absolute;
+  top: calc(50% - 20rem);
+  left: calc(50% - 20rem);
+  -webkit-animation-name: movement;
+          animation-name: movement;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 26s;
+          animation-duration: 26s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  border: 1px solid #ffffff;
+  border-radius: 100%;
+}
+
+.neptune-planet {
+  background-color: #227be0;
+  position: relative;
+  top: -0.65rem;
+  left: calc(50% - 0.65rem);
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
 @-webkit-keyframes movement {
   from {
     -webkit-transform: rotate(0deg);

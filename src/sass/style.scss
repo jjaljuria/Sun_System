@@ -1,15 +1,5 @@
 /*Variables */
 @import './variables';
-
-$planets:
-	'mercury',
-	'venus',
-	'earth',
-	'mars'
-;
-
-
-
 	
 body{
 	font-size: 16px;
@@ -106,6 +96,42 @@ body{
 	background-color: rgb(170, 5, 5);
 	@include planet($mars-planet-size);
 }
+
+.jupiter-orbit{
+	@include orbit($jupiter-orbit-time, $jupiter-orbit-diameter);
+}
+
+.jupiter-planet{
+	background-color: rgb(207, 134, 38);
+	@include planet($jupiter-planet-size);
+}
+
+.saturn-orbit{
+	@include orbit($saturn-orbit-time, $saturn-orbit-diameter);
+}
+
+.saturn-planet{
+	background-color: rgb(100, 63, 14);
+	@include planet($saturn-planet-size);
+}
+
+.uranus-orbit{
+	@include orbit($uranus-orbit-time, $uranus-orbit-diameter);
+}
+
+.uranus-planet{
+	background-color: rgb(68, 68, 68);
+	@include planet($uranus-planet-size);
+}
+.neptune-orbit{
+	@include orbit($neptune-orbit-time, $neptune-orbit-diameter);
+}
+
+.neptune-planet{
+	background-color: rgb(34, 123, 224);
+	@include planet($neptune-planet-size);
+}
+
 
 
 @keyframes movement{
