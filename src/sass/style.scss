@@ -3,6 +3,7 @@
 	
 body{
 	font-size: 16px;
+	overflow: hidden;
 }
 
 .w-100{
@@ -13,7 +14,7 @@ body{
 	height: 100%;
 }
 
-.container{
+.sun-system{
 	max-width: 1080px;
 	max-height: 1080px;
 }
@@ -21,7 +22,8 @@ body{
 .space{
 	background-color: rgb(61, 65, 126);
 }
-.sol{
+
+.sun{
 	width: 5rem;
 	height: 5rem;
 	background-color: yellow;
