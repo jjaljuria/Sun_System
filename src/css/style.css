@@ -64,11 +64,11 @@ body {
 }
 
 .venus-orbit {
-  width: 9rem;
-  height: 9rem;
+  width: 9.5rem;
+  height: 9.5rem;
   position: absolute;
-  top: calc(50% - 4.5rem);
-  left: calc(50% - 4.5rem);
+  top: calc(50% - 4.75rem);
+  left: calc(50% - 4.75rem);
   -webkit-animation-name: movement;
           animation-name: movement;
   -webkit-animation-iteration-count: infinite;
@@ -90,11 +90,11 @@ body {
 }
 
 .earth-orbit {
-  width: 11rem;
-  height: 11rem;
+  width: 12.5rem;
+  height: 12.5rem;
   position: absolute;
-  top: calc(50% - 5.5rem);
-  left: calc(50% - 5.5rem);
+  top: calc(50% - 6.25rem);
+  left: calc(50% - 6.25rem);
   -webkit-animation-name: movement;
           animation-name: movement;
   -webkit-animation-iteration-count: infinite;
@@ -116,11 +116,11 @@ body {
 }
 
 .mars-orbit {
-  width: 13rem;
-  height: 13rem;
+  width: 15rem;
+  height: 15rem;
   position: absolute;
-  top: calc(50% - 6.5rem);
-  left: calc(50% - 6.5rem);
+  top: calc(50% - 7.5rem);
+  left: calc(50% - 7.5rem);
   -webkit-animation-name: movement;
           animation-name: movement;
   -webkit-animation-iteration-count: infinite;
