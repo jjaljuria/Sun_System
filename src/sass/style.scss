@@ -1,9 +1,30 @@
 /*Variables */
 @import './variables';
 	
-body{
+html{
 	font-size: 16px;
+}
+
+body{
 	overflow: hidden;
+}
+
+@media (max-width: 800px){
+	html{
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 600px){
+	html{
+		font-size: 8px
+	}
+}
+
+@media (max-width: 400px){
+	html{
+		font-size: 6px;
+	}
 }
 
 .w-100{
@@ -54,6 +75,7 @@ body{
 	animation-timing-function: linear;
 	border: 1px solid #ffffff;
 	border-radius: 100%;
+
 }
 
 @mixin planet($size){
@@ -140,4 +162,8 @@ body{
 	to{
 		transform: rotate(360deg);
 	}
+}
+
+.sun-system ~ div{
+	border: 1px solid red;
 }

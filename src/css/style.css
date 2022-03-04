@@ -1,7 +1,28 @@
 /*Variables */
-body {
+html {
   font-size: 16px;
+}
+
+body {
   overflow: hidden;
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 6px;
+  }
 }
 
 .w-100 {
@@ -32,8 +53,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .circle {
@@ -46,14 +66,10 @@ body {
   position: absolute;
   top: calc(50% - 3.5rem);
   left: calc(50% - 3.5rem);
-  -webkit-animation-name: movement;
-          animation-name: movement;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-name: movement;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-timing-function: linear;
   border: 1px solid #ffffff;
   border-radius: 100%;
 }
@@ -73,14 +89,10 @@ body {
   position: absolute;
   top: calc(50% - 4.75rem);
   left: calc(50% - 4.75rem);
-  -webkit-animation-name: movement;
-          animation-name: movement;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-duration: 7s;
-          animation-duration: 7s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-name: movement;
+  animation-iteration-count: infinite;
+  animation-duration: 7s;
+  animation-timing-function: linear;
   border: 1px solid #ffffff;
   border-radius: 100%;
 }
@@ -99,14 +111,10 @@ body {
   position: absolute;
   top: calc(50% - 6.25rem);
   left: calc(50% - 6.25rem);
-  -webkit-animation-name: movement;
-          animation-name: movement;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-duration: 9s;
-          animation-duration: 9s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-name: movement;
+  animation-iteration-count: infinite;
+  animation-duration: 9s;
+  animation-timing-function: linear;
   border: 1px solid #ffffff;
   border-radius: 100%;
 }
@@ -125,14 +133,10 @@ body {
   position: absolute;
   top: calc(50% - 7.5rem);
   left: calc(50% - 7.5rem);
-  -webkit-animation-name: movement;
-          animation-name: movement;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-duration: 11s;
-          animation-duration: 11s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-name: movement;
+  animation-iteration-count: infinite;
+  animation-duration: 11s;
+  animation-timing-function: linear;
   border: 1px solid #ffffff;
   border-radius: 100%;
 }
@@ -152,14 +156,10 @@ body {
   position: absolute;
   top: calc(50% - 11rem);
   left: calc(50% - 11rem);
-  -webkit-animation-name: movement;
-          animation-name: movement;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-duration: 17s;
-          animation-duration: 17s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-name: movement;
+  animation-iteration-count: infinite;
+  animation-duration: 17s;
+  animation-timing-function: linear;
   border: 1px solid #ffffff;
   border-radius: 100%;
 }
@@ -178,14 +178,10 @@ body {
   position: absolute;
   top: calc(50% - 14rem);
   left: calc(50% - 14rem);
-  -webkit-animation-name: movement;
-          animation-name: movement;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-duration: 20s;
-          animation-duration: 20s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-name: movement;
+  animation-iteration-count: infinite;
+  animation-duration: 20s;
+  animation-timing-function: linear;
   border: 1px solid #ffffff;
   border-radius: 100%;
 }
@@ -204,14 +200,10 @@ body {
   position: absolute;
   top: calc(50% - 17rem);
   left: calc(50% - 17rem);
-  -webkit-animation-name: movement;
-          animation-name: movement;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-duration: 23s;
-          animation-duration: 23s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-name: movement;
+  animation-iteration-count: infinite;
+  animation-duration: 23s;
+  animation-timing-function: linear;
   border: 1px solid #ffffff;
   border-radius: 100%;
 }
@@ -231,14 +223,10 @@ body {
   position: absolute;
   top: calc(50% - 20rem);
   left: calc(50% - 20rem);
-  -webkit-animation-name: movement;
-          animation-name: movement;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-duration: 26s;
-          animation-duration: 26s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-name: movement;
+  animation-iteration-count: infinite;
+  animation-duration: 26s;
+  animation-timing-function: linear;
   border: 1px solid #ffffff;
   border-radius: 100%;
 }
@@ -252,25 +240,16 @@ body {
   height: 1.5rem;
 }
 
-@-webkit-keyframes movement {
+@keyframes movement {
   from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
-@keyframes movement {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
+.sun-system ~ div {
+  border: 1px solid red;
 }
 /*# sourceMappingURL=style.css.map */
