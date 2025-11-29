@@ -8,21 +8,6 @@ body {
   overflow: hidden;
 }
 
-@media (max-width: 800px) {
-  html {
-    font-size: 12px;
-  }
-}
-@media (max-width: 600px) {
-  html {
-    font-size: 8px;
-  }
-}
-@media (max-width: 400px) {
-  html {
-    font-size: 6px;
-  }
-}
 .w-100 {
   width: 100%;
 }
@@ -337,4 +322,26 @@ body {
 #planet-image {
   margin: auto;
   display: block;
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 8px;
+  }
+  .modal-content {
+    width: 60%;
+  }
+}
+@media (max-width: 400px) {
+  html {
+    font-size: 6px;
+  }
+  .modal-content {
+    width: 90%;
+  }
 }/*# sourceMappingURL=style.css.map */
