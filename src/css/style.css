@@ -266,6 +266,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 16px;
   /* Estado inicial (oculto) del fondo */
   opacity: 0;
   visibility: hidden;
@@ -285,6 +286,7 @@ body {
 
 /* Modal Content/Box */
 .modal-content {
+  font-size: 1em;
   color: #ccc;
   background-color: #2c2c2c;
   margin-right: auto;
