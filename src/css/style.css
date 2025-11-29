@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Variables */
 html {
   font-size: 16px;
@@ -57,6 +58,10 @@ body {
   border-radius: 100%;
 }
 
+.planet {
+  cursor: pointer;
+}
+
 .mercury-orbit {
   width: 7rem;
   height: 7rem;
@@ -69,15 +74,17 @@ body {
   animation-timing-function: linear;
   border: 1px solid #ffffff;
   border-radius: 100%;
+  z-index: 99;
 }
 
 .mercury-planet {
-  background-color: rgb(97, 150, 197);
   position: relative;
   top: -0.3rem;
   left: calc(50% - 0.3rem);
   width: 0.6rem;
   height: 0.6rem;
+  cursor: pointer;
+  background-color: rgb(97, 150, 197);
 }
 
 .venus-orbit {
@@ -92,6 +99,7 @@ body {
   animation-timing-function: linear;
   border: 1px solid #ffffff;
   border-radius: 100%;
+  z-index: 98;
 }
 
 .venus-planet {
@@ -100,6 +108,7 @@ body {
   left: calc(50% - 0.9rem);
   width: 1.8rem;
   height: 1.8rem;
+  cursor: pointer;
 }
 
 .earth-orbit {
@@ -114,6 +123,7 @@ body {
   animation-timing-function: linear;
   border: 1px solid #ffffff;
   border-radius: 100%;
+  z-index: 97;
 }
 
 .earth-planet {
@@ -122,6 +132,7 @@ body {
   left: calc(50% - 0.9rem);
   width: 1.8rem;
   height: 1.8rem;
+  cursor: pointer;
 }
 
 .mars-orbit {
@@ -136,6 +147,7 @@ body {
   animation-timing-function: linear;
   border: 1px solid #ffffff;
   border-radius: 100%;
+  z-index: 96;
 }
 
 .mars-planet {
@@ -145,6 +157,7 @@ body {
   left: calc(50% - 0.4rem);
   width: 0.8rem;
   height: 0.8rem;
+  cursor: pointer;
 }
 
 .jupiter-orbit {
@@ -159,6 +172,7 @@ body {
   animation-timing-function: linear;
   border: 1px solid #ffffff;
   border-radius: 100%;
+  z-index: 95;
 }
 
 .jupiter-planet {
@@ -167,6 +181,7 @@ body {
   left: calc(50% - 2.25rem);
   width: 4.5rem;
   height: 4.5rem;
+  cursor: pointer;
 }
 
 .saturn-orbit {
@@ -181,6 +196,7 @@ body {
   animation-timing-function: linear;
   border: 1px solid #ffffff;
   border-radius: 100%;
+  z-index: 94;
 }
 
 .saturn-planet {
@@ -189,6 +205,7 @@ body {
   left: calc(50% - 1.5rem);
   width: 3rem;
   height: 3rem;
+  cursor: pointer;
 }
 
 .uranus-orbit {
@@ -203,6 +220,7 @@ body {
   animation-timing-function: linear;
   border: 1px solid #ffffff;
   border-radius: 100%;
+  z-index: 93;
 }
 
 .uranus-planet {
@@ -212,6 +230,7 @@ body {
   left: calc(50% - 1rem);
   width: 2rem;
   height: 2rem;
+  cursor: pointer;
 }
 
 .neptune-orbit {
@@ -226,6 +245,7 @@ body {
   animation-timing-function: linear;
   border: 1px solid #ffffff;
   border-radius: 100%;
+  z-index: 92;
 }
 
 .neptune-planet {
@@ -235,6 +255,7 @@ body {
   left: calc(50% - 0.75rem);
   width: 1.5rem;
   height: 1.5rem;
+  cursor: pointer;
 }
 
 @keyframes movement {
@@ -247,4 +268,73 @@ body {
 }
 .sun-system ~ div {
   border: 1px solid red;
+}
+
+.modal {
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Estado inicial (oculto) del fondo */
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.3s ease-out, visibility 0.3s ease-out;
+  /* Transición para el fondo */
+}
+
+.modal.is-active {
+  /* Estado activo (visible) del fondo */
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transition: opacity 0s, visibility 0s;
+  /* El fondo desaparece inmediatamente al cerrar */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin-right: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+  height: 100%;
+  border: 1px solid red;
+  /* Animación de deslizamiento del contenido */
+  transform: translateX(-100%);
+  /* Inicialmente fuera de la pantalla a la izquierda */
+  transition: transform 0.3s ease-out;
+  /* Transición suave para el contenido */
+}
+
+.modal.is-active .modal-content {
+  transform: translateX(0);
+  /* Deslizar hacia la pantalla */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#planet-image {
+  margin: auto;
+  display: block;
 }/*# sourceMappingURL=style.css.map */
