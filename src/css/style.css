@@ -12,19 +12,16 @@ body {
     font-size: 12px;
   }
 }
-
 @media (max-width: 600px) {
   html {
     font-size: 8px;
   }
 }
-
 @media (max-width: 400px) {
   html {
     font-size: 6px;
   }
 }
-
 .w-100 {
   width: 100%;
 }
@@ -43,7 +40,7 @@ body {
 }
 
 .space {
-  background-color: #1b1d38;
+  background-color: rgb(27, 29, 56);
 }
 
 .sun {
@@ -75,7 +72,7 @@ body {
 }
 
 .mercury-planet {
-  background-color: #6196c5;
+  background-color: rgb(97, 150, 197);
   position: relative;
   top: -0.3rem;
   left: calc(50% - 0.3rem);
@@ -142,7 +139,7 @@ body {
 }
 
 .mars-planet {
-  background-color: #9e1313;
+  background-color: rgb(158, 19, 19);
   position: relative;
   top: -0.4rem;
   left: calc(50% - 0.4rem);
@@ -209,7 +206,7 @@ body {
 }
 
 .uranus-planet {
-  background-color: #444444;
+  background-color: rgb(68, 68, 68);
   position: relative;
   top: -1rem;
   left: calc(50% - 1rem);
@@ -232,7 +229,7 @@ body {
 }
 
 .neptune-planet {
-  background-color: #227be0;
+  background-color: rgb(34, 123, 224);
   position: relative;
   top: -0.75rem;
   left: calc(50% - 0.75rem);
@@ -248,8 +245,6 @@ body {
     transform: rotate(360deg);
   }
 }
-
 .sun-system ~ div {
   border: 1px solid red;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

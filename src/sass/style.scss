@@ -1,64 +1,64 @@
 /*Variables */
-@import './variables';
-	
-html{
+@use './variables' as *;
+
+html {
 	font-size: 16px;
 }
 
-body{
+body {
 	overflow: hidden;
 }
 
-@media (max-width: 800px){
-	html{
+@media (max-width: 800px) {
+	html {
 		font-size: 12px;
 	}
 }
 
-@media (max-width: 600px){
-	html{
+@media (max-width: 600px) {
+	html {
 		font-size: 8px
 	}
 }
 
-@media (max-width: 400px){
-	html{
+@media (max-width: 400px) {
+	html {
 		font-size: 6px;
 	}
 }
 
-.w-100{
+.w-100 {
 	width: 100%;
 }
 
-.h-100{
+.h-100 {
 	height: 100%;
 }
 
-.m-0{
-	margin:0px;
+.m-0 {
+	margin: 0px;
 }
 
-.sun-system{
+.sun-system {
 	max-width: 1080px;
 	max-height: 1080px;
 }
 
-.space{
+.space {
 	background-color: rgb(27, 29, 56);
 }
 
-.sun{
+.sun {
 	width: 5rem;
 	height: 5rem;
 	background-color: yellow;
-	position:absolute;
+	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
 
-.circle{
+.circle {
 	border-radius: 100%;
 
 }
@@ -67,8 +67,8 @@ body{
 	width: $diameter;
 	height: $diameter;
 	position: absolute;
-	top:calc(50% - #{$diameter/2});
-	left: calc(50% - #{$diameter/2});
+	top: calc(50% - calc($diameter/2));
+	left: calc(50% - calc($diameter/2));
 	animation-name: movement;
 	animation-iteration-count: infinite;
 	animation-duration: $animation-duration;
@@ -78,92 +78,94 @@ body{
 
 }
 
-@mixin planet($size){
+@mixin planet($size) {
 	position: relative;
-	top: -$size/2;
-	left:calc(50% - #{$size/2});
+	top: calc(-1 * $size/2);
+	left: calc(50% - calc($size/2));
 	width: $size;
 	height: $size;
 }
 
-.mercury-orbit{
+.mercury-orbit {
 	@include orbit($mercury-orbit-time, $mercury-orbit-diameter);
 }
 
-.mercury-planet{
+.mercury-planet {
 	background-color: rgb(97, 150, 197);
 	@include planet($mercury-planet-size);
 }
 
-.venus-orbit{
+.venus-orbit {
 	@include orbit($venus-orbit-time, $venus-orbit-diameter);
 }
 
-.venus-planet{
+.venus-planet {
 	@include planet($venus-planet-size);
 }
 
-.earth-orbit{
+.earth-orbit {
 	@include orbit($earth-orbit-time, $earth-orbit-diameter);
 }
 
-.earth-planet{
+.earth-planet {
 	@include planet($earth-planet-size);
 }
 
-.mars-orbit{
+.mars-orbit {
 	@include orbit($mars-orbit-time, $mars-orbit-diameter);
 }
 
-.mars-planet{
+.mars-planet {
 	background-color: rgb(158, 19, 19);
 	@include planet($mars-planet-size);
 }
 
-.jupiter-orbit{
+.jupiter-orbit {
 	@include orbit($jupiter-orbit-time, $jupiter-orbit-diameter);
 }
 
-.jupiter-planet{
+.jupiter-planet {
 	@include planet($jupiter-planet-size);
 }
 
-.saturn-orbit{
+.saturn-orbit {
 	@include orbit($saturn-orbit-time, $saturn-orbit-diameter);
 }
 
-.saturn-planet{
+.saturn-planet {
 	@include planet($saturn-planet-size);
 }
 
-.uranus-orbit{
+.uranus-orbit {
 	@include orbit($uranus-orbit-time, $uranus-orbit-diameter);
 }
 
-.uranus-planet{
+.uranus-planet {
 	background-color: rgb(68, 68, 68);
 	@include planet($uranus-planet-size);
 }
-.neptune-orbit{
+
+.neptune-orbit {
 	@include orbit($neptune-orbit-time, $neptune-orbit-diameter);
 }
 
-.neptune-planet{
+.neptune-planet {
 	background-color: rgb(34, 123, 224);
 	@include planet($neptune-planet-size);
 }
 
 
 
-@keyframes movement{
-	from{
+@keyframes movement {
+	from {
 		transform: rotate(0deg);
 	}
-	to{
+
+	to {
 		transform: rotate(360deg);
 	}
 }
 
-.sun-system ~ div{
+.sun-system~div {
 	border: 1px solid red;
 }
