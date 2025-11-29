@@ -285,13 +285,13 @@ body {
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #fefefe;
+  color: #ccc;
+  background-color: #2c2c2c;
   margin-right: auto;
   padding: 20px;
-  border: 1px solid #888;
   width: 40%;
   height: 100%;
-  border: 1px solid red;
+  border-right: 1px solid #ccc;
   /* Animación de deslizamiento del contenido */
   transform: translateX(-100%);
   /* Inicialmente fuera de la pantalla a la izquierda */
